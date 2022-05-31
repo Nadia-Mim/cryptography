@@ -1,4 +1,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    background-color: #e3f2fd;
+}
+
+.buttonPosition {
+    margin-left: 39%;
+}
+
+#buttonShadow {
+    box-shadow: 5px 5px 5px 7px lightgray;
 }
