@@ -11,6 +11,9 @@ const encode = (input) => {
         if (input.charAt(i) === 'Z' || input.charAt(i) === 'z') {
             text = text + String.fromCharCode(input.charCodeAt(i) - 25);
         }
+        else if (input.charAt(i) === ' ') {
+            text = text + '.';
+        }
         else {
             text = text + (String.fromCharCode(input.charCodeAt(i) + 1));
         }
@@ -30,6 +33,9 @@ const decode = (input) => {
     for (let i = 1; i < input.length; i++) {
         if (input.charAt(i) === 'A' || input.charAt(i) === 'a') {
             text = text + String.fromCharCode(input.charCodeAt(i) + 25);
+        }
+        else if (input.charAt(i) === '.') {
+            text = text + ' ';
         }
         else {
             text = text + (String.fromCharCode(input.charCodeAt(i) - 1));
