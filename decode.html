@@ -38,18 +38,18 @@
         </nav>
     </header>
 
-    <main>
-        div class="input-group px-5 pb-5">
-        <textarea class="form-control" placeholder="Enocded Text"></textarea>
+    <main class="m-5 p-5">
+        <div class="input-group px-5 pb-5">
+            <textarea id="encodedText" class="form-control" placeholder="Enocded Text"></textarea>
         </div>
 
         <div class="buttonPosition p-5">
-            <button id="buttonShadow" type="button" class="btn btn-primary btn-lg border-dark rounded">Decode
+            <button onclick="decodeMessage()" id="buttonShadow" type="button" class="btn btn-info btn-lg">Decode
                 Message</button>
         </div>
 
         <div class="input-group px-5 pt-5">
-            <textarea class="form-control" placeholder="Decoded Text"></textarea>
+            <textarea id="decodedText" class="form-control" placeholder="Decoded Text"></textarea>
         </div>
     </main>
 
