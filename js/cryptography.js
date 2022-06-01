@@ -18,7 +18,9 @@ const encode = (input) => {
 
     return text;
 }
+document.getElementById("decodedText").style.display = 'none';
 const decodeMessage = () => {
+    document.getElementById("decodedText").style.display = 'block';
     const encodedText = document.getElementById('encodedText');
     const decodedMessage = decode(encodedText.value);
     document.getElementById('decodedText').innerText = decodedMessage;
